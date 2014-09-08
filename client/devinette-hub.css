@@ -41,9 +41,12 @@ body {
   font-size: 32px;
 }
 
+/* http://stackoverflow.com/questions/3659294/ */
+/* http://stackoverflow.com/questions/18749276/ */
+/* http://alexcican.com/post/hide-and-show-div/ */
 .title-small-hidden {
   font-size: 24px;
-  opacity: 0;
+  opacity: 0.2;
 }
 .title-small-hidden:hover {
   opacity: 0.4;
