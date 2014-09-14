@@ -2,24 +2,24 @@
   <title>devinette-hub</title>
 </head>
 
-<body>
+<template name='main_page'>
   {{> banner}}
   <br /><br />
   {{> featuring}}
   <br /><br />
   {{> footer}}
-</body>
+</template>
 
 <template name='banner'>
   <!-- http://stackoverflow.com/questions/644896/how-do-i-scale-a-stubborn-svg-embedded-with-the-object-tag -->
   <div class='banner-container'>
-    <div class='title-big'><span class='title-highlight'>Devinette</span> Hub</div>
+    <div class='title-big-mainpage'><span class='title-highlight'>Devinette</span> Hub</div>
     <br />
     <div class='title-small'>Play with quizzes. Share them around the world.</div>
     <div style='padding-top: 36px;'></div>
     <div id='sign_up_callout'>
-      <button class='btn btn-large btn-primary btn-long'><b>SIGN UP</b> TO EXPLORE MORE</button>
-      <button class='btn btn-large btn-long'>LOG IN</button>
+      <button id='btn_sign_up' class='btn btn-large btn-primary btn-long'><b>SIGN UP</b> TO EXPLORE MORE</button>
+      <button id='btn_log_in' class='btn btn-large btn-long'>LOG IN</button>
     </div>
     <div style='padding-top: 80px;'></div>
   </div>

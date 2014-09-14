@@ -1,0 +1,28 @@
+<template name='register_page'>
+  <div class='title-big'><span class='title-highlight'>Devinette</span> Hub</div>
+  Register
+  <hr />
+  <form role='form'>
+    <div class='form-group form-group-long'>
+      <label for='text_username'>Username</label>
+      <input type='email' class='form-control' id='text_username' placeholder='Symbols are not accepted except . - _' style='width: 50%'>
+    </div>
+    <div class='form-group form-group-long'>
+      <label for='text_email'>Email address</label>
+      <input type='email' class='form-control' id='text_email' placeholder='Your e-mail' style='width: 50%'>
+    </div>
+    <div class='form-group form-group-long'>
+      <label for='text_password'>Password</label>
+      <input type='password' class='form-control' id='text_password' placeholder='Should be 3-16 characters long' style='width: 50%'>
+    </div>
+    <div class='form-group form-group-long'>
+      <label for='text_rpt_password'>Repeat password</label>
+      <input type='password' class='form-control' id='text_rpt_password' placeholder='To confirm that you did not have a typo' style='width: 50%'>
+    </div>
+    <small>*By signing up you agree to the license (add later, currently GPL).</small>
+    <br /><br />
+    <div class='form-group-long'>
+      <button id='btn_submit' type='submit' class='btn btn-large btn-primary'>Here we go!</button>
+    </div>
+  </form>
+</template>

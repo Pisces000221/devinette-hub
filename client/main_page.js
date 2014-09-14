@@ -6,3 +6,9 @@ Template.featuring.helpers({
     return { title: 'The Second Quiz on Hub', desc: 'This is the most popular on Day 1' };
   }
 });
+
+Template.banner.events({
+  'click #btn_sign_up': function () {
+    Router.go('/register');
+  }
+});
