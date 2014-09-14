@@ -4,14 +4,53 @@
 
 <body>
   {{> banner}}
+  <br /><br />
+  {{> featuring}}
+  <br /><br />
+  {{> footer}}
 </body>
 
 <template name='banner'>
   <!-- http://stackoverflow.com/questions/644896/how-do-i-scale-a-stubborn-svg-embedded-with-the-object-tag -->
   <div class='banner-container'>
     <div class='title-big'><span class='title-highlight'>Devinette</span> Hub</div>
-    <div class='title-small-hidden'><span class='IPA'>/də.vi.nɛt/</span><i>riddle</i> or <i>quiz</i> in French</div>
+    <br />
     <div class='title-small'>Play with quizzes. Share them around the world.</div>
-    <div style='padding-top: 120px;'></div>
+    <div style='padding-top: 36px;'></div>
+    <div id='sign_up_callout'>
+      <button class='btn btn-large btn-primary btn-long'><b>SIGN UP</b> TO EXPLORE MORE</button>
+      <button class='btn btn-large btn-long'>LOG IN</button>
+    </div>
+    <div style='padding-top: 80px;'></div>
+  </div>
+</template>
+
+<template name='featuring'>
+  <div>
+    <p style='color: #ff8080'><fontawesome>&#xf005;</fontawesome>
+    Featuring <b>Today</b></p>
+    {{> quiz_summary data=feat_today}}
+  </div>
+  <br /><br /><br /><br />
+  <div>
+    <p style='color: #ffc080'><fontawesome>&#xf005;</fontawesome>
+    Most Popular <b>Today</b></p>
+    {{> quiz_summary data=pop_today}}
+  </div>
+</template>
+
+<template name='quiz_summary'>
+  <hr />
+  <h1>{{data.title}}</h1>
+  <span class='quiz-desc'>{{data.desc}}</span>
+</template>
+
+<template name='footer'>
+  <hr />
+  <div style='text-align: center'>
+    <p style='font-size: 24px; color: #c0c0c0'>
+      Created with <fontawesome>&#xf004;</fontawesome> by Us<br />
+      Copyright (C) Pisces000221 2014
+    </p>
   </div>
 </template>
